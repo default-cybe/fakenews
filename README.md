@@ -56,3 +56,41 @@ On error (for example, missing fields or malformed input) it returns `400` with:
 }
 ```
 
+## Example
+
+```bash
+curl -X POST http://localhost:5000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Breaking news", "text": "Something happened today."}'
+```
+
+## Running locally
+
+1. Clone the repository and change into it:
+
+   ```bash
+   git clone https://github.com/default-cybe/fakenews.git
+   cd fakenews
+   ```
+
+2. Create and activate a virtual environment:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # on Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Start the app:
+
+   ```bash
+   python application.py
+   ```
+
+   The API runs on `http://localhost:5000` by default.
+
