@@ -94,3 +94,13 @@ curl -X POST http://localhost:5000/predict \
 
    The API runs on `http://localhost:5000` by default.
 
+## Tech stack
+
+- Python
+- Flask
+- scikit-learn
+- joblib
+
+## License
+
+Released under the [MIT License](LICENSE).
